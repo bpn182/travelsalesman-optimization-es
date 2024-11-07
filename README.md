@@ -41,3 +41,35 @@ Different strategies for the ES optimization are available, such as:
 - **pandas**
 - **scipy**
 - **matplotlib**
+
+
+## Visualizations
+
+### Initial Route
+![Initial Route](images/inital-route.png)
+
+### Scatter Plot of Cities
+![Scatter Plot of Cities](images/scatter-cities.png)
+
+### Optimization Strategies
+
+#### Mu Lambda
+![Mu Lambda](images/001_mu_lambda.jpg)
+
+#### Mu Plus Lambda
+![Mu Plus Lambda](images/002_mu_plus_lambda.jpg)
+
+#### Mu Over Mu Lambda
+![Mu Over Mu Lambda](images/003_mu_over_lambda.jpg)
+
+
+## Comparison of Strategies
+
+| Strategy                      | Total Distance |
+|-------------------------------|----------------|
+| Without Optimization          | 179 km         |
+| (μ, λ) Mu Lambda ES           | 62 km          |
+| (μ + λ) Mu Plus Lambda ES     | 67 km          |
+| (μ/μ, λ) Mu Over Mu Lambda ES | 173 km         |
+
+From the above table, we can see that with our parameters, the (μ, λ) Mu Lambda ES gives the best result. Although in (μ + λ) Mu Plus Lambda ES we retain good solutions from parents as well, it limits wide exploration. So in the case of the Traveling Salesman problem, (μ, λ) Mu Lambda ES gives the best result.
